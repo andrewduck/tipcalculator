@@ -3,7 +3,7 @@
 //  Tip Calculator
 //
 //  Created by Andrew Duck on 19/2/16.
-//  Copyright © 2016 Zinio. All rights reserved.
+//  Copyright © 2016 Andrew Duck. All rights reserved.
 //
 
 import UIKit
