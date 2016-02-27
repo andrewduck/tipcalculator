@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough 
 
 
-`![Video Walkthrough](walkthrough.gif)` 
+![Video Walkthrough](walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

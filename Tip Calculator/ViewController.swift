@@ -25,12 +25,12 @@ class ViewController: UIViewController {
         
         billField.text = 0.twoDigits
         
-        tipLabel.text = "0.00"
-        totalLabel.text = "0.00"
-        tipLabelSplit1.text = "0.00"
-        tipLabelSplit2.text = "0.00"
-        tipLabelSplit3.text = "0.00"
-        tipLabelSplit4.text = "0.00"
+        tipLabel.text = "0"
+        totalLabel.text = "0"
+        tipLabelSplit1.text = "0"
+        tipLabelSplit2.text = "0"
+        tipLabelSplit3.text = "0"
+        tipLabelSplit4.text = "0"
         
     }
 
@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         
         // Update billField
         billField.text = (Double((billField.text?.numbersOnly.integerValue)!) / 100).twoDigits
+        //billField.text = formatter.numberFromString((Double((billField.text?.numbersOnly.integerValue)!) / 100).twoDigits)
         
         // Setup tip percentages and map to tipControl
         let tipPercentages = [0.18, 0.2, 0.22]
@@ -74,7 +75,30 @@ class ViewController: UIViewController {
 
     }
     
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultTipControlIndex = defaults.integerForKey("defaultTipAmount")
+        tipControl.selectedSegmentIndex = defaultTipControlIndex
+        
+        self.onEditingChanged(tipControl)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("view did disappear")
+    }
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
@@ -85,6 +109,7 @@ extension Double {
         static let formatter: NSNumberFormatter = {
             let formatter = NSNumberFormatter()
             formatter.numberStyle = .CurrencyStyle
+            formatter.locale = NSLocale.currentLocale()
             formatter.minimumFractionDigits = 2
             formatter.maximumFractionDigits = 2
             return formatter

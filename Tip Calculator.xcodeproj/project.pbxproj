@@ -14,6 +14,9 @@
 		6A2D01D51C76EC0A000F2D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D01D31C76EC0A000F2D90 /* LaunchScreen.storyboard */; };
 		6A2D01E01C76EC0A000F2D90 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D01DF1C76EC0A000F2D90 /* Tip_CalculatorTests.swift */; };
 		6A2D01EB1C76EC0A000F2D90 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D01EA1C76EC0A000F2D90 /* Tip_CalculatorUITests.swift */; };
+		6A2D01F91C78A40B000F2D90 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D01F81C78A40B000F2D90 /* SettingsViewController.swift */; };
+		6AE2F2B61C8181C0002EE242 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2F2B51C8181C0002EE242 /* README.md */; };
+		6AE2F2B81C8182D7002EE242 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2F2B71C8182D7002EE242 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6A2D01E61C76EC0A000F2D90 /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D01EA1C76EC0A000F2D90 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		6A2D01EC1C76EC0A000F2D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2D01F81C78A40B000F2D90 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6AE2F2B51C8181C0002EE242 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AE2F2B71C8182D7002EE242 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		6A2D01BE1C76EC0A000F2D90 = {
 			isa = PBXGroup;
 			children = (
+				6AE2F2B71C8182D7002EE242 /* .gitignore */,
+				6AE2F2B51C8181C0002EE242 /* README.md */,
 				6A2D01C91C76EC0A000F2D90 /* Tip Calculator */,
 				6A2D01DE1C76EC0A000F2D90 /* Tip CalculatorTests */,
 				6A2D01E91C76EC0A000F2D90 /* Tip CalculatorUITests */,
@@ -100,6 +108,7 @@
 				6A2D01CA1C76EC0A000F2D90 /* AppDelegate.swift */,
 				6A2D01CC1C76EC0A000F2D90 /* ViewController.swift */,
 				6A2D01CE1C76EC0A000F2D90 /* Main.storyboard */,
+				6A2D01F81C78A40B000F2D90 /* SettingsViewController.swift */,
 				6A2D01D11C76EC0A000F2D90 /* Assets.xcassets */,
 				6A2D01D31C76EC0A000F2D90 /* LaunchScreen.storyboard */,
 				6A2D01D61C76EC0A000F2D90 /* Info.plist */,
@@ -230,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE2F2B81C8182D7002EE242 /* .gitignore in Resources */,
 				6A2D01D51C76EC0A000F2D90 /* LaunchScreen.storyboard in Resources */,
 				6A2D01D21C76EC0A000F2D90 /* Assets.xcassets in Resources */,
 				6A2D01D01C76EC0A000F2D90 /* Main.storyboard in Resources */,
@@ -259,6 +269,8 @@
 			files = (
 				6A2D01CD1C76EC0A000F2D90 /* ViewController.swift in Sources */,
 				6A2D01CB1C76EC0A000F2D90 /* AppDelegate.swift in Sources */,
+				6AE2F2B61C8181C0002EE242 /* README.md in Sources */,
+				6A2D01F91C78A40B000F2D90 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +501,7 @@
 				6A2D01F11C76EC0A000F2D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A2D01F21C76EC0A000F2D90 /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +510,7 @@
 				6A2D01F41C76EC0A000F2D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A2D01F51C76EC0A000F2D90 /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +519,7 @@
 				6A2D01F71C76EC0A000F2D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
